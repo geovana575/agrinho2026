@@ -1,322 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Poluição Mundial</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-
-:root{
-    --azul:#dff4ff;
-    --azul-escuro:#4aa3df;
-    --amarelo:#fff6b0;
-    --texto:#333;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fafcff;
-    color:var(--texto);
-}
-
-.navbar{
-    background:var(--azul);
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.hero{
-    height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("https://images.unsplash.com/photo-1497436072909-f5e4be0cfe85?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-}
-
-.hero h1{
-    font-size:4rem;
-    font-weight:bold;
-}
-
-.hero p{
-    font-size:1.3rem;
-    max-width:800px;
-    margin:auto;
-}
-
-.section{
-    padding:80px 0;
-}
-
-.azul{
-    background:var(--azul);
-}
-
-.amarelo{
-    background:var(--amarelo);
-}
-
-h2{
-    color:var(--azul-escuro);
-    margin-bottom:30px;
-    font-weight:bold;
-}
-
-img{
-    width:100%;
-    border-radius:15px;
-    margin-top:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-}
-
-.card{
-    border:none;
-    border-radius:15px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.estatistica{
-    font-size:3rem;
-    font-weight:bold;
-    color:var(--azul-escuro);
-}
-
-footer{
-    background:var(--azul);
-    text-align:center;
-    padding:40px;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPlaneta | Consciência e Ação Contra a Poluição</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
-<div class="container">
-
-<a class="navbar-brand fw-bold" href="#">
-🌍 Poluição Mundial
-</a>
-
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" href="#sobre">Sobre</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#tipos">Tipos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#impactos">Impactos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#solucoes">Soluções</a>
-</li>
-
-</ul>
-
-</div>
-</div>
-</nav>
-
-<section class="hero">
-
-<div class="container">
-
-<h1>POLUIÇÃO NO MUNDO</h1>
-
-<p>
-Entenda como a poluição afeta o meio ambiente, a economia e a vida de bilhões de pessoas todos os dias.
-</p>
-
-<a href="#sobre" class="btn btn-warning btn-lg mt-4">
-Explorar
-</a>
-
-</div>
-
-</section>
-
-<section id="sobre" class="section">
-
-<div class="container">
-
-<h2>O que é Poluição?</h2>
-
-<p>
-A poluição é a introdução de substâncias ou formas de energia no ambiente que causam danos aos seres vivos e aos ecossistemas. Ela pode ocorrer no ar, na água, no solo e até mesmo através de ruídos excessivos.
-</p>
-
-<p>
-Com o crescimento das cidades, das indústrias e do consumo global, a quantidade de resíduos e emissões aumentou significativamente. Isso transformou a poluição em um dos maiores desafios ambientais do século XXI.
-</p>
-
-<img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=1200&q=80">
-
-</div>
-
-</section>
-
-<section id="tipos" class="section azul">
-
-<div class="container">
-
-<h2>Principais Tipos de Poluição</h2>
-
-<div class="row g-4">
-
-<div class="col-md-6">
-<div class="card p-4 shadow">
-<h4>🌫️ Poluição do Ar</h4>
-<p>
-Provocada principalmente por veículos, fábricas e queimadas. Está associada a doenças respiratórias, cardiovasculares e à redução da qualidade de vida.
-</p>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="card p-4 shadow">
-<h4>🌊 Poluição da Água</h4>
-<p>
-O descarte inadequado de resíduos e esgoto contamina rios, lagos e oceanos, afetando animais, plantas e seres humanos.
-</p>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="card p-4 shadow">
-<h4>🏭 Poluição do Solo</h4>
-<p>
-Produtos químicos, lixo e resíduos industriais prejudicam a fertilidade do solo e comprometem a agricultura.
-</p>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="card p-4 shadow">
-<h4>🔊 Poluição Sonora</h4>
-<p>
-O excesso de ruído pode causar estresse, insônia, ansiedade e problemas auditivos.
-</p>
-</div>
-</div>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1200&q=80">
-
-</div>
-
-</section>
-
-<section id="impactos" class="section">
-
-<div class="container">
-
-<h2>Como a Poluição Afeta o Dia a Dia</h2>
-
-<p>
-Os efeitos da poluição são percebidos diariamente. O ar contaminado aumenta os casos de asma e bronquite. A água poluída favorece doenças e dificulta o acesso à água potável.
-</p>
-
-<p>
-Além disso, a poluição gera enormes prejuízos econômicos devido aos gastos com saúde pública, limpeza ambiental e perda de produtividade.
-</p>
-
-<p>
-As mudanças climáticas também estão relacionadas à emissão excessiva de gases poluentes, provocando secas, enchentes, ondas de calor e eventos climáticos extremos.
-</p>
-
-<div class="row text-center mt-5">
-
-<div class="col-md-4">
-<div class="estatistica">99%</div>
-<p>da população respira ar acima dos níveis recomendados.</p>
-</div>
-
-<div class="col-md-4">
-<div class="estatistica">7M+</div>
-<p>de mortes anuais associadas à poluição do ar.</p>
-</div>
-
-<div class="col-md-4">
-<div class="estatistica">8M</div>
-<p>de toneladas de plástico chegam aos oceanos todos os anos.</p>
-</div>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80">
-
-</div>
-
-</section>
-
-<section id="solucoes" class="section amarelo">
-
-<div class="container">
-
-<h2>Soluções para um Futuro Melhor</h2>
-
-<p>
-Combater a poluição exige ações individuais e coletivas. Governos, empresas e cidadãos têm papel fundamental na preservação ambiental.
-</p>
-
-<ul>
-<li>♻️ Reciclar materiais sempre que possível.</li>
-<li>🚲 Utilizar meios de transporte sustentáveis.</li>
-<li>🌳 Participar de projetos de reflorestamento.</li>
-<li>🔋 Investir em energias renováveis.</li>
-<li>🚯 Reduzir o uso de plástico descartável.</li>
-<li>💧 Economizar água e evitar desperdícios.</li>
-<li>📚 Promover educação ambiental.</li>
-</ul>
-
-<p>
-Pequenas atitudes, quando realizadas por milhões de pessoas, podem gerar grandes transformações para o planeta.
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>🌎 Preservar Hoje Para Garantir o Amanhã</h3>
-
-<p>
-Site educativo sobre os impactos da poluição mundial.
-</p>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cabeçalho / Menu de Navegação -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <h1>Eco<span>Planeta</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#impacto-humano">Impacto Humano</a></li>
+                    <li><a href="#impacto-animal">Impacto Animal</a></li>
+                    <li><a href="#solucoes">Como Ajudar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero / Introdução -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>O Estado da Poluição Mundial</h2>
+            <p>A poluição não é um problema do futuro; é uma crise do presente. Toneladas de resíduos, gases tóxicos e produtos químicos mudam a vida na Terra todos os dias.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        
+        <!-- Bloco 1: Impacto no Dia a Dia das Pessoas -->
+        <section id="impacto-humano" class="content-section">
+            <h2>Como a Poluição Afeta o Nosso Dia a Dia</h2>
+            <div class="grid-2">
+                <div class="text-block">
+                    <h3>Saúde Pública em Risco</h3>
+                    <p>Respirar nas grandes cidades tornou-se o equivalente a fumar passivamente. A poluição do ar (material particulado invisível) entra diretamente nos pulmões e na corrente sanguínea, causando asma, bronquite crônica e problemas cardíacos graves.</p>
+                    <h3>Água e Alimentação Contaminadas</h3>
+                    <p>O descarte incorreto de plásticos e produtos químicos agrícolas contamina os lençóis freáticos. Microplásticos já foram detectados na água da torneira, nos peixes que consumimos e até no sal de cozinha, afetando nosso sistema endócrino.</p>
+                    <h3>Economia e Rotina</h3>
+                    <p>O acúmulo de lixo entope bueiros, gerando enchentes que travam o trânsito e destroem lares. Além disso, os custos familiares com saúde aumentam devido a doenças sazonais agravadas pelo clima poluído.</p>
+                </div>
+                <div class="image-block">
+                    <img src="https://unsplash.com" alt="Cidade coberta por poluição do ar e fumaça de fábricas">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 2: Impacto nos Animais -->
+        <section id="impacto-animal" class="content-section reverse">
+            <h2>A Tragédia Silenciosa na Vida Animal</h2>
+            <div class="grid-2">
+                <div class="image-block">
+                    <img src="https://unsplash.com" alt="Lixo plástico acumulado na praia e oceano">
+                </div>
+                <div class="text-block">
+                    <h3>Oceanos de Plástico</h3>
+                    <p>Milhares de tartarugas, baleias e aves marinhas morrem anualmente por ingestão de plástico ou por ficarem presas em redes de pesca fantasmas. Os animais confundem sacolas plásticas com águas-vivas, seu alimento natural.</p>
+                    <h3>Perda de Hábitat e Extinção</h3>
+                    <p>A poluição do solo por pesticidas destrói colônias de abelhas e polinizadores essenciais para a flora. Nos rios, o derramamento de esgoto industrial zera os níveis de oxigênio, provocando a morte em massa de peixes e anfíbios.</p>
+                    <h3>Quebra da Cadeia Alimentar</h3>
+                    <p>Quando um predador consome uma presa contaminada por metais pesados (como o mercúrio), a toxina acumula-se ao longo da cadeia. Isso causa mutações genéticas, infertilidade e redução drástica das populações selvagens.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 3: Como Ajudar / Soluções -->
+        <section id="solucoes" class="actions-section">
+            <h2>Guia de Ação: Como Evitar que a Poluição Aumente</h2>
+            <p class="section-subtitle">Pequenas mudanças diárias e pressões coletivas transformam o futuro do nosso planeta.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Hábitos Individuais</h3>
+                    <ul>
+                        <li>Substitua plásticos de uso único por sacolas de pano.</li>
+                        <li>Pratique a separação rigorosa do lixo reciclável.</li>
+                        <li>Reduza o consumo de carne (diminui a pegada de carbono).</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <h3>Mobilidade Verde</h3>
+                    <ul>
+                        <li>Priorize o transporte público ou caronas compartilhadas.</li>
+                        <li>Utilize a bicicleta ou caminhe em trajetos curtos.</li>
+                        <li>Mantenha os filtros do seu veículo sempre revisados.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Consumo Consciente</h3>
+                    <ul>
+                        <li>Evite o desperdício de energia desligando aparelhos.</li>
+                        <li>Apoie marcas locais com selos de responsabilidade ambiental.</li>
+                        <li>Cobre políticas públicas de saneamento e coleta seletiva na sua cidade.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 EcoPlaneta - Criado para conscientização ambiental no GitHub Pages.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
